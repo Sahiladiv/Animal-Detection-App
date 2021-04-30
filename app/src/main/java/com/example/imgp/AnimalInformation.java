@@ -21,14 +21,14 @@ public class AnimalInformation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animal_information);
         Intent intent = getIntent();
-        String common = intent.getStringExtra("Common Name");
-
+        String commonName = intent.getStringExtra("Common Name");
+        commonName = commonName.toLowerCase();
         TextView cn = (TextView)findViewById(R.id.commonName);
         TextView sn = (TextView)findViewById(R.id.scientificName);
         TextView fd = (TextView)findViewById(R.id.food);
         TextView ltion = (TextView)findViewById(R.id.location);
 
-        DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(common);
+        DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(commonName);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
 
@@ -42,7 +42,7 @@ public class AnimalInformation extends AppCompatActivity {
                         String scientific = (String)doc.get("Scientific_Name");
                         String foodEaten = (String) doc.get("Food");
                         String locationFound = (String)doc.get("Location");
-
+ 
                         cn.setText(common);
                         sn.setText(scientific);
                         fd.setText(foodEaten);

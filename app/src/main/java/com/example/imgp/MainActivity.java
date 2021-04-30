@@ -25,11 +25,12 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    private Button select, predict;
+    private Button select, predict,info;
     private ImageView imageView ;
     int SELECT_IMAGE_CODE = 1;
     private TextView tv;
     private Bitmap img;
+    String common;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
+
+        info = (Button)findViewById(R.id.info);
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),AnimalInformation.class);
+                intent.putExtra("Common Name",common);
+                startActivity(intent);
+            }
+        });
+
+
 
         predict.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,11 +132,9 @@ public class MainActivity extends AppCompatActivity {
                         tv.setText(" pig");
                   */
                int ind=indexOf(f,largest(f));
-               Intent intent = new Intent(getApplicationContext(),AnimalInformation.class);
 
-               String common=s[ind];
-               intent.putExtra("Common Name",common);
-               tv.setText(s[ind]);
+               common=s[ind];
+               tv.setText(common);
                     model.close();
 
                 } catch (IOException e) {
