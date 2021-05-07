@@ -1,7 +1,13 @@
 package com.example.imgp;
 
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
+<<<<<<< Updated upstream
 import androidx.annotation.NonNull;
+=======
+>>>>>>> Stashed changes
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,17 +15,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.*;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
-import java.util.Map;
 
 public class SearchedAnimal extends AppCompatActivity {
+<<<<<<< Updated upstream
     ArrayList <String> details;
+=======
+
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +37,15 @@ public class SearchedAnimal extends AppCompatActivity {
         TextView sn = (TextView)findViewById(R.id.scientificName);
         TextView fd = (TextView)findViewById(R.id.food);
         TextView ltion = (TextView)findViewById(R.id.location);
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         cn.setText(common);
         sn.setText(scientific);
         fd.setText(foodEaten);
         ltion.setText(locationFound);
+<<<<<<< Updated upstream
 
 //        DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(searchText);
 //        docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -75,7 +83,8 @@ public class SearchedAnimal extends AppCompatActivity {
 //            }
 //        });
 
+=======
+>>>>>>> Stashed changes
     }
-
 
 }

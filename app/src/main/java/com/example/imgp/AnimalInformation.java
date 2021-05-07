@@ -1,6 +1,10 @@
 package com.example.imgp;
 
 import androidx.annotation.NonNull;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +18,10 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 public class AnimalInformation extends AppCompatActivity {
 
     @Override
@@ -30,6 +38,10 @@ public class AnimalInformation extends AppCompatActivity {
 
         DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(commonName);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             @Override
 
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -44,9 +56,19 @@ public class AnimalInformation extends AppCompatActivity {
                         String locationFound = (String)doc.get("Location");
  
                         cn.setText(common);
+<<<<<<< Updated upstream
                         sn.setText(scientific);
                         fd.setText(foodEaten);
                         ltion.setText(locationFound);
+=======
+
+                        sn.setText(scientific);
+
+                        fd.setText(foodEaten);
+
+                        ltion.setText(locationFound);
+
+>>>>>>> Stashed changes
 
 
 
