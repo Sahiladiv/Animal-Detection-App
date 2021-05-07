@@ -4,19 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".SearchedAnimal"
-    tools:ignore="ExtraText">
-
-=======
-<<<<<<< Updated upstream
-    tools:context=".SearchedAnimal">
-=======
     tools:context=".AnimalInformation"
     tools:ignore="ExtraText">
 
->>>>>>> Stashed changes
->>>>>>> Second
 
     <TextView
         android:id="@+id/animalName"
@@ -34,44 +24,6 @@
         app:layout_constraintVertical_bias="0.047" />
 
     <TextView
-<<<<<<< HEAD
-        android:id="@+id/location"
-        android:layout_width="248dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="40dp"
-        android:autoSizeMaxTextSize="100sp"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeStepGranularity="2sp"
-=======
-<<<<<<< Updated upstream
-        android:id="@+id/textView2"
-        android:layout_width="110dp"
-        android:layout_height="19dp"
-        android:text="Scientific Name:"
->>>>>>> Second
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food"
-        app:layout_constraintVertical_bias="0.0"
-        tools:targetApi="o" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/common_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.227" />
-=======
-        app:layout_constraintVertical_bias="0.226" />
-=======
         android:id="@+id/location"
         android:layout_width="249dp"
         android:layout_height="186dp"
@@ -95,8 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.193" />
->>>>>>> Stashed changes
->>>>>>> Second
 
     <TextView
         android:id="@+id/textView3"
@@ -108,15 +58,7 @@
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.421" />
-=======
-<<<<<<< Updated upstream
-        app:layout_constraintVertical_bias="0.318" />
-=======
         app:layout_constraintVertical_bias="0.375" />
->>>>>>> Stashed changes
->>>>>>> Second
 
     <TextView
         android:id="@+id/textView4"
@@ -125,24 +67,6 @@
         android:text="@string/location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food"
-        app:layout_constraintVertical_bias="0.17" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="110dp"
-        android:layout_height="19dp"
-        android:text="@string/scientific_name"
-=======
-<<<<<<< Updated upstream
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
-=======
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food"
@@ -159,54 +83,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.289" />
->>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/commonName"
         android:layout_width="255dp"
         android:layout_height="22dp"
         android:textAlignment="viewStart"
->>>>>>> Second
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.323" />
-
-    <TextView
-        android:id="@+id/commonName"
-        android:layout_width="255dp"
-        android:layout_height="22dp"
-=======
-<<<<<<< Updated upstream
-        app:layout_constraintVertical_bias="0.146" />
-=======
-        app:layout_constraintVertical_bias="0.192" />
->>>>>>> Stashed changes
-
-    <TextView
-        android:id="@+id/scientificName"
-        android:layout_width="254dp"
-<<<<<<< Updated upstream
-        android:layout_height="43dp"
->>>>>>> Second
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/scientificName"
         android:layout_width="254dp"
-        android:layout_height="25dp"
-=======
-        app:layout_constraintVertical_bias="0.234" />
-=======
         android:layout_height="25dp"
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -215,41 +107,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.292" />
->>>>>>> Stashed changes
-
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="245dp"
-<<<<<<< Updated upstream
-        android:layout_height="201dp"
->>>>>>> Second
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
-        android:autoSizeTextType="uniform"/>
 
     <TextView
         android:id="@+id/food"
         android:layout_width="245dp"
-        android:layout_height="104dp"
-        android:autoSizeMaxTextSize="100sp"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeStepGranularity="2sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.494"
-        tools:targetApi="o"
-        android:autoSizeTextType="uniform"/>
-=======
-        app:layout_constraintVertical_bias="0.429" />
-=======
         android:layout_height="130dp"
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -258,7 +119,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46" />
->>>>>>> Stashed changes
->>>>>>> Second
 
 </androidx.constraintlayout.widget.ConstraintLayout>
