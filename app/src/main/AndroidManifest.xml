@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Imgp">
-        <activity android:name=".AnimalInformation"></activity>
-        <activity android:name=".SearchedAnimal" />
+        <activity android:name=".SearchedAnimal"></activity>
+        <activity android:name=".AnimalInformation" />
         <activity android:name=".cam" />
         <activity
             android:name=".keyword_act"

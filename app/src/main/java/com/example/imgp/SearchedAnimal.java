@@ -1,8 +1,17 @@
 package com.example.imgp;
 
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
+<<<<<<< Updated upstream
 import androidx.annotation.NonNull;
+<<<<<<< HEAD
 import androidx.annotation.RequiresApi;
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Second
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,18 +20,18 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.*;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
-import java.util.Map;
 
 public class SearchedAnimal extends AppCompatActivity {
+<<<<<<< Updated upstream
     ArrayList <String> details;
+<<<<<<< HEAD
     @RequiresApi(api = Build.VERSION_CODES.O)
+=======
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Second
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +47,15 @@ public class SearchedAnimal extends AppCompatActivity {
         TextView sn = (TextView)findViewById(R.id.scientificName);
         TextView fd = (TextView)findViewById(R.id.food);
         TextView ltion = (TextView)findViewById(R.id.location);
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Second
         cn.setText(common);
         cn.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
         sn.setText(scientific);
@@ -49,10 +65,15 @@ public class SearchedAnimal extends AppCompatActivity {
         fd.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
 
         ltion.setText(locationFound);
+<<<<<<< HEAD
         ltion.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
+=======
+<<<<<<< Updated upstream
+>>>>>>> Second
 
 
+=======
+>>>>>>> Stashed changes
     }
-
 
 }

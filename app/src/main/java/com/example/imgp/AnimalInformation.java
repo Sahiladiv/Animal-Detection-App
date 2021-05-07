@@ -1,7 +1,14 @@
 package com.example.imgp;
 
 import androidx.annotation.NonNull;
+<<<<<<< HEAD
 import androidx.annotation.RequiresApi;
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Second
 import androidx.appcompat.app.AppCompatActivity;
 import android.support.v4.app.*;
 import android.content.Intent;
@@ -16,8 +23,15 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+<<<<<<< HEAD
 import org.w3c.dom.Text;
 
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Second
 public class AnimalInformation extends AppCompatActivity {
 
     @Override
@@ -36,7 +50,14 @@ public class AnimalInformation extends AppCompatActivity {
 
         DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(commonName);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+<<<<<<< HEAD
             @RequiresApi(api = Build.VERSION_CODES.O)
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Second
             @Override
 
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -51,13 +72,28 @@ public class AnimalInformation extends AppCompatActivity {
                         String locationFound = (String)doc.get("Location");
  
                         cn.setText(common);
+<<<<<<< HEAD
                         cn.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
                         sn.setText(scientific);
                         sn.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
                         fd.setText(foodEaten);
                         fd.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
+=======
+<<<<<<< Updated upstream
+                        sn.setText(scientific);
+                        fd.setText(foodEaten);
+                        ltion.setText(locationFound);
+=======
+
+                        sn.setText(scientific);
+
+                        fd.setText(foodEaten);
+
+>>>>>>> Second
                         ltion.setText(locationFound);
                         ltion.setAutoSizeTextTypeUniformWithConfiguration(12,14,2,1);
+
+>>>>>>> Stashed changes
 
 
 
