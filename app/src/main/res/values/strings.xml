@@ -10,4 +10,10 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_main2">MainActivity</string>
+
+    <string name="scientific_name">Scientific Name:</string>
+    <string name="food">Food:</string>
+    <string name="location">Location:</string>
+    <string name="common_name">Common Name:</string>
+
 </resources>

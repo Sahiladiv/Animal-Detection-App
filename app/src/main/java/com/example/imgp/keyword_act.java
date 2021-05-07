@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +32,8 @@ public class keyword_act extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 searchText = (EditText)findViewById(R.id.searchAnimal);
-                String mySearch = String.valueOf(searchText.getText());
-
+                String mySearch1 = String.valueOf(searchText.getText());
+                String mySearch = mySearch1.toLowerCase();
                 DocumentReference docref = FirebaseFirestore.getInstance().collection("animals").document(mySearch);
                 docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                     @Override
@@ -58,7 +59,8 @@ public class keyword_act extends AppCompatActivity {
                             }
                             else{
                                 String t = "No data";
-
+                                Toast toast = Toast.makeText(getApplicationContext(),mySearch1+" not present!",Toast.LENGTH_SHORT);
+                                toast.show();
                                 Log.d("Error:","No data");
                             }
 

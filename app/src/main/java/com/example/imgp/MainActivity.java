@@ -8,10 +8,12 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.imgp.ml.Model;
 
@@ -63,8 +65,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),AnimalInformation.class);
-                intent.putExtra("Common Name",common);
-                startActivity(intent);
+                if(common.equals(null)){
+                    Toast toast = Toast.makeText(getApplicationContext(),common+" not present!",Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+                else{
+                    intent.putExtra("Common Name",common);
+                    startActivity(intent);
+                }
+
             }
         });
 
@@ -96,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                     // Releases model resources if no longer used.
 
                      */
-                     float f[]=new float[10];
+
+                    float f[]=new float[10];
                     f[0]=outputFeature0.getFloatArray()[0];
                     f[1]=outputFeature0.getFloatArray()[1];
                     f[2]=outputFeature0.getFloatArray()[2];
@@ -133,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
                   */
                int ind=indexOf(f,largest(f));
 
+                    Log.d( "Value:", String.valueOf(f[ind]));
                common=s[ind];
                tv.setText(common);
                     model.close();
